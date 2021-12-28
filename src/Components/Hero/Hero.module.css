@@ -1,7 +1,7 @@
-@value light from "../../css/colors.css";
+@value light,lightblue from "../../css/colors.css";
 
 .root {
-  background: light;
+  background: lightblue;
   padding-top: 36px;
   padding-bottom: 36px;
 }

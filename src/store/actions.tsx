@@ -60,3 +60,14 @@ export const fetchUserNameAndId = () => async () => {
     return {}
   }
 }
+
+export const spysrFetchData = () => async () => {
+  try {
+    const res: any = await axios.get('https://fakestoreapi.com/products')
+    const data = res.data.map(data => ({ id: data.id, title: data.title }))
+    return { type: 'products', payload: res.data }
+  } catch (error) {
+    console.error(error.message)
+    return {}
+  }
+}

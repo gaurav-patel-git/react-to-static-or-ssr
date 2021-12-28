@@ -10,6 +10,8 @@ export const reducer = (state, action) => {
       return { ...state, userData: action.payload }
     case 'page':
       return { ...state, page: action.payload }
+    case 'products':
+      return { ...state, products: action.payload }
     default:
       return state
   }

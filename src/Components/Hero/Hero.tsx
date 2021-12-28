@@ -11,7 +11,7 @@ const Hero: FunctionComponent<Props> = ({ title, subtitle }) => {
     <section className={styles.root}>
       <div className="container">
         <h1 className={styles.title}>{title}</h1>
-        {subtitle ? <span className={styles.subtitle}>{subtitle}</span> : null}
+        {subtitle ? <a href='https://gauravpatel.live' className={styles.subtitle}>{subtitle}</a> : null}
       </div>
     </section>
   )

@@ -34,6 +34,15 @@ code {
   display: none !important;
 }
 
+ /* Remove extra left and right margins, due to padding in columns */
+ .row {margin: 0 -5px;}
+  
+ /* Clear floats after the columns */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
 @media only screen and (max-width: 768px) {
   .is-hidden-mobile {
     display: none !important;

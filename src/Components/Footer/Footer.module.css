@@ -1,6 +1,6 @@
-@value light from "../../css/colors.css";
+@value light, lightblue from "../../css/colors.css";
 
 .root {
-  background: light;
+  background: lightblue;
   text-align: center;
 }
